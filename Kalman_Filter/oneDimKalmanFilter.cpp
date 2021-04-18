@@ -1,7 +1,9 @@
 #include <math.h>
 #include <tuple>
 #include <iostream>
-
+#include "Core"
+#include "LU"  
+ragglesoft@ragglesoft-GS66-Stealth-10UE:~/Desktop/R
 
 // TASK
 /*
