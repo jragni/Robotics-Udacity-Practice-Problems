@@ -6,7 +6,7 @@
 
 double newMean, newVar; 
 
-std::tuple<double,double> stateprediction(double mu1, double var1, double mu2, double var2){
+std::tuple<double,double> statePrediction(double mu1, double var1, double mu2, double var2){
     // add the two beliefs in order to get the posterior belief
 
     newMean = mu1 + mu2;
@@ -16,7 +16,7 @@ std::tuple<double,double> stateprediction(double mu1, double var1, double mu2, d
 }
 
 int main(int argc, char** argv){
-    tie(newMean, newVar) = state_prediction(10, 4, 12, 4);
+    std::tie(newMean, newVar) = statePrediction(10, 4, 12, 4);
     printf("[%f, %f]", newMean, newVar);
 
     return 0;
